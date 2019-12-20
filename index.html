@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>思格教育官网</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/shouye/index.css" /> <!-- 程序css -->
+		<link rel="stylesheet" type="text/css" href="css/jSlider.min.css" />
+		<!--轮播css-->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" /> <!-- 初始化css -->
+		<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.bundle.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="cj/jquery.syotimer.js" type="text/javascript" charset="utf-8"></script> <!-- 倒计时插件 -->
+		<script src="js/cx/index.js" type="text/javascript" charset="utf-8"></script> <!-- 程序js -->
+		<script src="cj/jquery.jSlider.min.js" type="text/javascript" charset="utf-8"></script> <!-- 轮播js -->
+	</head>
+	<script type="text/javascript">
+		$(function() {
+			show()
+		})
+
+		function show() {
+			console.log("--------页面加载--------");
+			//`	倒计时设置 
+			$('#simple_timer').syotimer({
+				year: 2019,
+				month: 12,
+				day: 25,
+				hour: 0,
+				minute: 0,
+			});
+		}
+	</script>
+
+	<body>
+		<div class="container-fluid">
+			<div class="container text-right font-weight-bold" style="font-size: 18px;height: 30px;line-height: 30px; color: #007BFF;">
+				咨询热线：400-999-9999
+			</div>
+			<!-- 头部 -->
+			<div class=" container   py-4" style="background-color: #FFFFFF;">
+				<div class="row" style="height: 4.375rem">
+					<!-- <img src="img/test1.jpg" > -->
+					<img src="img/shouye/logo.jpg" class="col-lg-4 col-xs-4">
+					<div class="col-lg-1 col-xs-1">
+
+					</div>
+					<div class="col-lg-1 col-xs-1">
+
+					</div>
+					<img src="img/shouye/smallbanner.png" class="col-lg-6 col-xs-6">
+				</div>
+			</div>
+			<!-- 导航栏 -->
+			<div class="c_h_nav">
+				<div class="container">
+					<ul class="row nav nav-pills mb-3 px-5  text-light" id="pills-tab" role="tablist">
+						<li class="nav-item col-lg-2 col-xs-2">
+							<a class="nav-link c_h_nav_link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+							 aria-controls="pills-home" aria-selected="true">首页</a>
+						</li>
+						<li class="nav-item col-lg-2 col-xs-2">
+							<a class="nav-link c_h_nav_link" id="pills-profile-tab"  href="dianwang.html" role="tab"
+							 aria-controls="pills-profile" aria-selected="false">国家电网</a>
+						</li>
+						<li class="nav-item col-lg-2 col-xs-2">
+							<a class="nav-link c_h_nav_link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+							 aria-controls="pills-contact" aria-selected="false">电力企业</a>
+						</li>
+						<li class="nav-item col-lg-2 col-xs-2">
+							<a class="nav-link c_h_nav_link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+							 aria-controls="pills-contact" aria-selected="false">面授课程</a>
+						</li>
+						<li class="nav-item col-lg-2 col-xs-2">
+							<a class="nav-link c_h_nav_link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+							 aria-controls="pills-contact" aria-selected="false">在线学习</a>
+						</li>
+						<li class="nav-item col-lg-2 col-xs-2">
+							<a class="nav-link c_h_nav_link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+							 aria-controls="pills-contact" aria-selected="false">关于思路</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+
+
+			<!-- banner芒果大图 -->
+			<div class="bannerImg">
+				<img src="img/shouye/banner01.jpg">
+			</div>
+
+
+			<!-- 倒计时图片以下 -->
+			<div class="" style="padding-bottom: 100px;">
+
+				<div class="tab-content" id="pills-tabContent">
+					<div class="tab-pane fade show active " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+						<!-- 企业介绍图片 -->
+						<div class="container mt-5 " style="padding: 20px;background-color: #FFFFFF; background-image: url(img/shouye/centerImg.png);background-size:100% 470px;background-repeat:no-repeat;">
+							<div class="row container">
+								<div class="col-lg-4 col-xs-4 d-flex align-items-center">
+									<img class="ml-5" style="width: 100%;border-radius: 15px;" src="img/shouye/gongzhongh.jpg">
+								</div>
+								<div class="col-lg-1 col-xs-1">
+
+								</div>
+
+
+								<!-- jslider轮播图  data-delay="2000" data-speed="500" data-loop="true" -->
+								<!-- <div class="jSlider col-7 " id="slider1" data-navigation="none">
+									<div class="d-flex justify-content-center align-items-center " style="flex-wrap: wrap;">
+										<div class="d-flex flex-column align-items-center mb-3 mr-3 border" style="width: 48%;border-top-right-radius: 20px;border-top-left-radius: 20px;">
+											<img src="img/shouye/hb01.png" class="w-100" style="height: 160px;border-top-right-radius: 20px;border-top-left-radius: 20px;">
+											<span style="height: 40px;line-height: 40px;">“超值福利0元体验课”</span>
+										</div>
+										<div class="d-flex flex-column align-items-center mb-3   border" style="width: 48%;border-top-right-radius: 20px;border-top-left-radius: 20px;">
+											<img src="img/shouye/hb02.png" class=" w-100" style="height: 160px;border-top-right-radius: 20px;border-top-left-radius: 20px;">
+											<span style="height: 40px;line-height: 40px;">“新大纲课程免费听”</span>
+										</div>
+										<div class="d-flex flex-column align-items-center  border  mr-3" style="width: 48%;border-top-right-radius: 20px;border-top-left-radius: 20px;">
+											<img src="img/shouye/hb03.png" class="w-100" style="height: 160px;border-top-right-radius: 20px;border-top-left-radius: 20px;">
+											<span style="height: 40px;line-height: 40px;">“加入我们 体验不一样”</span>
+										</div>
+										<div class="d-flex flex-column align-items-center   border" style="width: 48%;border-top-right-radius: 20px;border-top-left-radius: 20px;">
+											<img src="img/shouye/hb04.jpg" class="w-100" style="height: 160px;border-top-right-radius: 20px;border-top-left-radius: 20px;">
+											<span style="height: 40px;line-height: 40px;">“线下全真模拟考试”</span>
+										</div>
+									</div>
+									<div class="d-flex justify-content-center align-items-center " style="flex-wrap: wrap;">
+										<div class="d-flex flex-column align-items-center mb-3 mr-3 border" style="width: 48%;border-top-right-radius: 20px;border-top-left-radius: 20px;">
+											<img src="img/shouye/hb01.png" class="w-100" style="height: 160px;border-top-right-radius: 20px;border-top-left-radius: 20px;">
+											<span style="height: 40px;line-height: 40px;">“超值福利0元体验课”</span>
+										</div>
+										<div class="d-flex flex-column align-items-center mb-3   border" style="width: 48%;border-top-right-radius: 20px;border-top-left-radius: 20px;">
+											<img src="img/shouye/hb02.png" class=" w-100" style="height: 160px;border-top-right-radius: 20px;border-top-left-radius: 20px;">
+											<span style="height: 40px;line-height: 40px;">“新大纲课程免费听”</span>
+										</div>
+										<div class="d-flex flex-column align-items-center  border  mr-3" style="width: 48%;border-top-right-radius: 20px;border-top-left-radius: 20px;">
+											<img src="img/shouye/hb03.png" class="w-100" style="height: 160px;border-top-right-radius: 20px;border-top-left-radius: 20px;">
+											<span style="height: 40px;line-height: 40px;">“加入我们 体验不一样”</span>
+										</div>
+										<div class="d-flex flex-column align-items-center   border" style="width: 48%;border-top-right-radius: 20px;border-top-left-radius: 20px;">
+											<img src="img/shouye/hb04.jpg" class="w-100" style="height: 160px;border-top-right-radius: 20px;border-top-left-radius: 20px;">
+											<span style="height: 40px;line-height: 40px;">“线下全真模拟考试”</span>
+										</div>
+
+									</div>
+								</div> -->
+
+								<div class="col-lg-7 col-xs-7 d-flex flex-column justify-content-center align-items-center ">
+									<div class="row d-flex">
+										<div class="d-flex flex-column align-items-center col-lg-5 col-xs-5 p-0 mx-2 border" style="border-top-right-radius: 20px;border-top-left-radius: 20px;">
+											<img src="img/shouye/hb01.png" class="w-100" style="border-top-right-radius: 20px;border-top-left-radius: 20px;">
+											<span style="height: 40px;line-height: 40px;">“超值福利0元体验课”</span>
+										</div>
+										<div class="col-lg-1 col-xs-1">
+											
+										</div>
+										<div class="d-flex flex-column align-items-center col-lg-5 col-xs-5 p-0 mx-2 border" style="border-top-right-radius: 20px;border-top-left-radius: 20px;">
+											<img src="img/shouye/hb02.png" class=" w-100" style="border-top-right-radius: 20px;border-top-left-radius: 20px;">
+											<span style="height: 40px;line-height: 40px;">“新大纲课程免费听”</span>
+										</div>
+									</div>
+									<div class="row d-flex mt-2">
+										<div class="d-flex flex-column align-items-center col-lg-5 col-xs-5 p-0 mx-2 border" style="border-top-right-radius: 20px;border-top-left-radius: 20px;">
+											<img src="img/shouye/hb03.png" class="w-100" style="border-top-right-radius: 20px;border-top-left-radius: 20px;">
+											<span style="height: 40px;line-height: 40px;">“加入我们 体验不一样”</span>
+										</div>
+										<div class="col-lg-1 col-xs-1">
+											
+										</div>
+										<div class="d-flex flex-column align-items-center col-lg-5 col-xs-5 p-0 mx-2 border" style="border-top-right-radius: 20px;border-top-left-radius: 20px;">
+											<img src="img/shouye/hb04.jpg" class="w-100" style="border-top-right-radius: 20px;border-top-left-radius: 20px;">
+											<span style="height: 40px;line-height: 40px;">“线下全真模拟考试”</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!------------------------------------------------------- 倒计时图片 ------------------------------------------------->
+						<div class="container position-relative">
+							<img src="img/shouye/daojishi.jpg" style="width: 100%;" class="mt-5">
+							<!-- <div id="simple_timer" class="timerText"></div> -->
+						</div>
+						<div class="row time_down pt-5 container" style="margin: 0 auto; background-color: #FFFFFF;">
+							<!-- 3个分类 -->
+							<div class="col-lg-9 col-xs-9">
+								<div class="row d-flex" >
+									<div class="col-lg-4 col-xs-4 d-flex flex-column justify-content-center  text-light" style="background: url(img/shouye/lan.png) no-repeat;height: 100px;">
+										<div class="" style="font-size: 20px;font-weight: bold;">
+											考试大纲
+										</div>
+										<span class="">
+											2020国家电网招聘考试考试大纲
+										</span>
+									</div>
+									<div class="col-lg-4 col-xs-4 d-flex flex-column justify-content-center text-light" style="background: url(img/shouye/zi.png) no-repeat; height: 100px;">
+										<div class="" style="font-size: 20px;font-weight: bold;">
+											招考指导
+										</div>
+										<span class="">
+											2020国家电网招聘考试招考指导
+										</span>
+									</div>
+									<div class="col-lg-4 col-xs-4 d-flex flex-column justify-content-center  text-light" style="background: url(img/shouye/lv.png) no-repeat;height: 100px;">
+										<div class="" style="font-size: 20px;font-weight: bold;">
+											考试快讯
+										</div>
+										<span class="">
+											2020国家电网招聘考试考试快讯
+										</span>
+									</div>
+								</div>
+								<div class="row d-flex">
+									<!-- 3个横图下边左侧 -->
+									<div class="col-lg-6 col-xs-6 mt-3">
+										<div style="color: #1D61B6;font-weight: bold;font-size: 18px;margin-bottom: 30px;">电网头条</div>
+										<img src="img/shouye/sige.jpg" class="rounded w-100">
+										<div class="mt-3">
+											<ul style="padding-left: 0;" id="toutiao">
+												<!-- 											<li class="mb-3">
+												<b>01 第三届“思格杯”电网全真模拟考，约你来战！</b>
+												<div class="">
+													2019-10-29 16：50
+												</div>
+											</li>
+											<li class="mb-3">
+												<b>02 第三届“思格杯”电网全真模拟考，约你来战！</b>
+												<div class="">
+													2019-10-29 16：50
+												</div>
+											</li>
+											<li class="mb-3">
+												<b>03 第三届“思格杯”电网全真模拟考，约你来战！</b>
+												<div class="">
+													2019-10-29 16：50
+												</div>
+											</li> -->
+											</ul>
+											<!-- 显示更多 -->
+											<div class="" style="color: #F3A334;" onclick="ttshowMore()">
+												查看更多》》
+											</div>
+										</div>
+									</div>
+
+									<!-- 3个横图下边右侧 -->
+									<div class="col-lg-6 col-xs-6 mt-3">
+										<div style="color: #1D61B6;font-weight: bold;font-size: 18px;margin-bottom: 30px;">招考公告</div>
+										<b style="font-size: 23px; ">国网技术学院2020年高校毕业生校园招聘公告</b>
+										<div class="my-4">
+											<small>发表时间：2019-10-17 09：26</small>
+										</div>
+										<p style="font-size: 15px; overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;">校园招聘范围：电工类专业，（含电力系统及其自动化、高电压与绝缘技术、电力电子与电力传动、电工理论与新技术、电机与电器动化、高电压与绝缘技术、电力电子与电力传动、电工理论与新技术、电机与电器</p>
+										<ul>
+											<li>
+												<div class="row mb-3">
+													<img src="img/shouye/01.jpg" class="col-lg-5 col-xs-5 rounded">
+													<div class="col-lg-7 col-xs-7">
+														<b>国网技术学院2020年高校毕业生校园招聘公告</b>
+														<div class="">
+															<small>发表时间：2019-10-17 09：26</small>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row mb-3">
+													<img src="img/shouye/01.jpg" class="col-lg-5 col-xs-5 rounded">
+													<div class="col-lg-7 col-xs-7">
+														<b>国网技术学院2020年高校毕业生校园招聘公告</b>
+														<div class="">
+															<small>发表时间：2019-10-17 09：26</small>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row mb-3">
+													<img src="img/shouye/01.jpg" class="col-lg-5 col-xs-5 rounded">
+													<div class="col-lg-7 col-xs-7">
+														<b>国网技术学院2020年高校毕业生校园招聘公告</b>
+														<div class="">
+															<small>发表时间：2019-10-17 09：26</small>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+
+										<!-- <div class="row mb-3">
+										<img src="img/shouye/01.jpg" class="col-5 rounded">
+										<div class="col-7">
+											<b>国网技术学院2020年高校毕业生校园招聘公告</b>
+											<div class="">
+												<small>发表时间：2019-10-17 09：26</small>
+											</div>
+										</div>
+									</div>
+									<div class="row mb-3">
+										<img src="img/shouye/01.jpg" class="col-5 rounded">
+										<div class="col-7">
+											<b>国网技术学院2020年高校毕业生校园招聘公告</b>
+											<div class="">
+												<small>发表时间：2019-10-17 09：26</small>
+											</div>
+										</div>
+									</div> -->
+										<!-- 显示更多 -->
+										<div class="" style="color: #F3A334;" onclick="zkshowMore()">
+											查看更多》》
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<!-- 侧栏资讯 -->
+							<div class="col-lg-3 col-xs-3 mt-3">
+								<!-- 相关资讯 -->
+								<div id="zixun">
+									<div id="" style="color: #1D61B6;font-weight: bold;font-size: 18px;margin-bottom: 30px;">
+										相关资讯
+									</div>
+									<div class="d-flex align-items-center">
+										<img src="img/shouye/csmall1.png" style="width: 110px;height: 90px;">
+										<div class="ml-2">
+											<b>2019年国家电网二批报考指南</b>
+											<div>2019-10-17 09:26</div>
+										</div>
+									</div>
+									<div class="d-flex align-items-center">
+										<img src="img/shouye/csmall2.png" style="width: 110px;height: 90px;">
+										<div class="ml-2">
+											<b>2019年国家电网二批报考指南</b>
+											<div>2019-10-17 09:26</div>
+										</div>
+									</div>
+									<div class="d-flex align-items-center">
+										<img src="img/shouye/csmall1.png" style="width: 110px;height: 90px;">
+										<div class="ml-2">
+											<b>2019年国家电网二批报考指南</b>
+											<div>2019-10-17 09:26</div>
+										</div>
+									</div>
+								</div>
+								<!-- 直播课堂 -->
+								<div id="zhibo">
+									<div id="" style="color: #1D61B6;font-weight: bold;font-size: 18px;margin-bottom: 30px;margin-top: 30px;">
+										直播课堂
+									</div>
+									<div class="d-flex flex-column">
+										<img src="img/shouye/kc01.jpg" class="w-100 mb-3">
+										<img src="img/shouye/kc02.jpg" class="w-100 mb-3">
+										<img src="img/shouye/kc03.jpg" class="w-100 mb-3">
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+						<!-- 芒果备考计划图 -->
+						<img src="img/shouye/zj03.jpg" class="w-100 mt-5">
+
+						<!-- 精讲教师 -->
+						<div class="d-flex flex-column align-items-center mt-5" style="color: #1864C9;">
+							<div class="" style="font-size: 24px;font-weight: bold;">
+								精讲教师
+							</div>
+							<div class="">
+								FINE LECTURING TEACHER
+							</div>
+							<!-- 						  <div class="card img-fluid" style="width:500px">
+							    <img class="card-img-top" src="https://static.runoob.com/images/mix/img_avatar.png" alt="Card image" style="width:100%">
+							    <div class="card-img-overlay">
+							      <h4 class="card-title">John Doe</h4>
+							      <p class="card-text">Some example text some example text. Some example text some example text. Some example text some example text. Some example text some example text.</p>
+							      <a href="#" class="btn btn-primary">See Profile</a>
+							    </div>
+							  </div> -->
+							<div class="row mt-4">
+								<img src="img/shouye/hb201.jpg" class="col-lg-3  col-xs-3 px-0">
+								<img src="img/shouye/hb202.jpg" class="col-lg-3 col-xs-3 px-0">
+								<img src="img/shouye/hb203.jpg" class="col-lg-3 col-xs-3 px-0">
+								<img src="img/shouye/hb204.jpg" class="col-lg-3 col-xs-3 px-0">
+							</div>
+						</div>
+
+						<!-- 教学环境 -->
+						<div class="d-flex flex-column align-items-center mt-5" style="color: #1864C9;">
+							<div class="" style="font-size: 24px;font-weight: bold;">
+								教学环境
+							</div>
+							<div class="">
+								TEACHING ENVIRONMENT
+							</div>
+							<div class="row mt-4">
+								<div class="col-lg-3 col-xs-3  d-flex flex-column align-items-center pr-3">
+									<img src="img/shouye/footerimg.jpg" class="" style="height: 150px;border-radius: 10px;">
+									<span style="height: 50px;line-height: 50px;">2020国家电网招聘考试招考指导</span>
+								</div>
+								<div class="col-lg-3 col-xs-3 d-flex flex-column align-items-center pr-3">
+									<img src="img/shouye/footerimg.jpg" class="" style="height: 150px;border-radius: 10px;">
+									<span style="height: 50px;line-height: 50px;">2020国家电网招聘考试招考指导</span>
+								</div>
+								<div class="col-lg-3 col-xs-3 d-flex flex-column align-items-center pr-3">
+									<img src="img/shouye/footerimg.jpg" class="" style="height: 150px;border-radius: 10px;">
+									<span style="height: 50px;line-height: 50px;">2020国家电网招聘考试招考指导</span>
+								</div>
+								<div class="col-lg-3 col-xs-3 d-flex flex-column align-items-center pr-3">
+									<img src="img/shouye/footerimg.jpg" class="" style="height: 150px;border-radius: 10px;">
+									<span style="height: 50px;line-height: 50px;">2020国家电网招聘考试招考指导</span>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+					<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">国家电网</div>
+					<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">电力企业</div>
+				</div>
+
+				<!-- footer底部 -->
+				<!-- 				<div class="" style="background-color: #242424;color: white;">
+					<div class="row">
+						<div class="col-2">
+						</div>
+						<div class="col-2">
+							<div class="mt-4 pb-2" style="border-bottom: 1px solid #fff;">
+								合作伙伴
+							</div>
+							<div class="mt-4 d-flex justify-content-between">
+								<span>腾讯课堂</span>
+								<span>新浪微博</span>
+								<span>百度搜索</span>
+							</div>
+							<div class="mt-4 d-flex justify-content-between">
+								<span>360搜索</span>
+								<span>一点资讯</span>
+								<span>今日头条</span>
+							</div>
+						</div>
+						<div class="col-1">
+						</div>
+						<div class="col-2">
+							<div class="mt-4 pb-2" style="border-bottom: 1px solid #fff;">
+								国家电网
+							</div>
+							<div class="row">
+								<div class="mt-4 col-6 d-flex flex-column justify-content-between">
+									<span>报考资讯</span>
+									<span>备考指导</span>
+								</div>
+								<div class="mt-4 col-6  d-flex flex-column ">
+									<span>报考指导</span>
+									<span class="mt-3 text-nowrap">2020电网考试</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-1">
+						</div>
+						<div class="col-2">
+							<div class="mt-4 pb-2" style="border-bottom: 1px solid #fff;">
+								咨询热线
+							</div>
+							<div class="mt-2 text-nowrap">
+								全国热线电话：周一至周日 09：00-17：30
+							</div>
+							<div class="font-italic font-weight-bold" style="font-size: 28px;">
+								400-003-1516
+							</div>
+							<div class="text-nowrap">
+								联系邮箱：sigeby_edu@163.com
+							</div>
+						</div>
+					</div>
+					<div class="text-center mt-5 pb-4">
+						<div class="">
+							© 2019.10.29 版权所有思格教育
+						</div>
+						<small class="">
+							电网培训 就选思格教育
+						</small>
+					</div>
+				</div>
+ -->
+				<div class="container-fluid">
+					<iframe src="footer.html" width="100%" height="350px" scrolling="auto"></iframe>
+				</div>
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
