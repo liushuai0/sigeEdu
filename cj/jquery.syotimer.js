@@ -173,28 +173,35 @@
     function init(elem,options){ // установка html разметки в блоке с таймером
         timer_html='<div class="timer-head-block">'+options.headTitle+'</div>';
         timer_html+='<div class="timer-body-block">';
-        if ( options.dayVisible ){
-            timer_html+='\
-            <div class="table-cell day">\
-                <div class="tab-val">0</div>\
-                <div class="tab-metr"></div>\
-            </div>'+'天';
-        }
+        // if ( options.dayVisible ){
+        //     timer_html+='\
+        //     <div class="table-cell day">\
+        //         <div class="tab-val">0</div>\
+        //         <div class="tab-metr"></div>\
+        //     </div>'+'天';
+        // }
+		 if ( options.dayVisible ){
+		     timer_html+='\
+		     <div class="table-cell day">\
+		         <div class="tab-val">0</div>\
+		         <div class="tab-metr"></div>\
+		    </div>';
+		 }
         timer_html+='\
             <div class="table-cell hour">\
                 <div class="tab-val">00</div>\
                 <div class="tab-metr"></div>\
-            </div>'+'时';
+            </div>';
 		timer_html+='\
             <div class="table-cell minute">\
                 <div class="tab-val">00</div>\
                 <div class="tab-metr"></div>\
-            </div>'+'分';
+            </div>';
 		timer_html+='\
             <div class="table-cell second">\
                 <div class="tab-val">00</div>\
                 <div class="tab-metr"></div>\
-            </div>'+'秒';
+            </div>';
         
         timer_html+='</div>';
         timer_html+='<div class="timer-foot-block">'+options.footTitle+'</div>';

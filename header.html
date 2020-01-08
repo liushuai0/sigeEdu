@@ -1,0 +1,205 @@
+<div class="container text-right font-weight-bold" style="font-size: 18px;height: 30px;line-height: 30px; color: #007BFF;">
+	咨询热线：400-999-9999
+</div>
+<!-- 头部 -->
+<div class=" container   py-4" style="background-color: #FFFFFF;">
+	<div class="row" style="height: 4.375rem">
+		<!-- <img src="img/test1.jpg" > -->
+		<img src="img/shouye/logo.jpg" class="col-lg-4 col-xs-4">
+		<div class="col-lg-1 col-xs-1">
+
+		</div>
+		<div class="col-lg-1 col-xs-1">
+
+		</div>
+		<img src="img/shouye/smallbanner.png" class="col-lg-6 col-xs-6">
+	</div>
+</div>
+<!-- 导航栏 -->
+<div class="c_h_nav">
+	<div class="container">
+		<ul class="row nav nav-pills mb-3 px-5  text-light" id="headerList" role="tablist">
+			<li class="nav-item col-lg-2 col-xs-2">
+				<a class="nav-link c_h_nav_link" id="headerList0" href="index.html" role="tab" aria-controls="pills-home"
+				 aria-selected="true">首页</a>
+			</li>
+			<li class="nav-item col-lg-2 col-xs-2 position-relative dianwangNav">
+				<a class="nav-link c_h_nav_link " href="dianwang.html" role="tab" aria-controls="pills-profile" aria-selected="false">国家电网</a>
+				<div class="dianwangxialaList" style="display: none;">
+					<div class="dianwangxialaList_a" id="dianwangTab1">
+						招考公告
+					</div>
+					<div class="dianwangxialaList_a" id="dianwangTab2">
+						招考指导
+					</div>
+					<div class="dianwangxialaList_a" id="dianwangTab3">
+						考试快讯
+					</div>
+				</div>
+			</li>
+
+
+			<li class="nav-item col-lg-2 col-xs-2">
+				<a class="nav-link c_h_nav_link" href="dianli.html" role="tab" aria-controls="pills-contact" aria-selected="false">电力企业</a>
+			</li>
+			<li class="nav-item col-lg-2 col-xs-2 position-relative kechengNav">
+				<a class="nav-link c_h_nav_link" href="kecheng.html" role="tab" aria-controls="pills-contact" aria-selected="false">面授课程</a>
+				<div class="kechengxialaList" style="display: none;">
+					<div class="" style="height: 120px;">
+						<div class="kechengxialaList_a bishion" id="kechengTab1">
+							笔试课程
+						</div>
+						<div class="kechengxialaList_a" style="border: 0;" id="kechengTab2">
+							面试课程
+						</div>
+					</div>
+					<!-- 笔试课程内容 -->
+					<div class="bg-white p-3" id='bishiContent'>
+						<div class="d-flex justify-content-around ">
+							<div class="mx-3">
+								<img src="img/classImg.png" style="width: 310px;height: 163px;">
+								<div class="text-center kechengxialaList_nav_title">
+									基础精讲班
+								</div>
+							</div>
+							<div class="mx-3">
+								<img src="img/classImg.png" style="width: 310px;height: 163px;">
+								<div class="text-center kechengxialaList_nav_title">
+									基础精讲班
+								</div>
+							</div>
+						</div>
+						<div class="d-flex">
+							<div class="mx-3">
+								<img src="img/classImg.png" style="width: 220px;height: 128px;">
+								<div class="text-center kechengxialaList_nav_title">
+									基础精讲班
+								</div>
+							</div>
+							<div class="mx-3">
+								<img src="img/classImg.png" style="width: 220px;height: 128px;">
+								<div class="text-center kechengxialaList_nav_title">
+									基础精讲班
+								</div>
+							</div>
+							<div class="mx-3">
+								<img src="img/classImg.png" style="width: 220px;height: 128px;">
+								<div class="text-center kechengxialaList_nav_title">
+									基础精讲班
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<!-- 面试课程内容 -->
+					<div class="bg-white p-3" style="display: none;" id='mianshiContent'>
+						当前为面试课程内容
+					</div>
+
+				</div>
+
+			</li>
+			<li class="nav-item col-lg-2 col-xs-2">
+				<a class="nav-link c_h_nav_link" href="onlineStu.html" role="tab" aria-controls="pills-contact" aria-selected="false">在线学习</a>
+			</li>
+			<li class="nav-item col-lg-2 col-xs-2">
+				<a class="nav-link c_h_nav_link" href="aboutUs.html" role="tab" aria-controls="pills-contact" aria-selected="false">关于思格</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+
+<!-- banner芒果大图 -->
+<div class="bannerImg" id='bannerImg'>
+	<img src="img/shouye/banner01.jpg">
+</div>
+<style type="text/css">
+	.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+		background-color: #ADD7F8;
+	}
+	.nav-pills .show>.nav-link{
+		color: #FFFFFF;
+		
+	}
+	.nav-link:hover{
+		color: #FFFFFF;
+		background-color: #ADD7F8;
+	}
+</style>
+
+<script type="text/javascript">
+	$(function() {
+		console.log("sdffasdf");
+		$("#headerList0").addClass("active");
+		//当前页或者跳转后页面的导航栏添加选中后样式
+		$("#headerList li a").each(function() {
+			$this = $(this);
+			if ($this[0].href == String(window.location)) { //String 对象用于处理文本（字符串）
+
+				$("#headerList0").removeClass("active");
+				$this.addClass("active");
+			}
+
+		});
+		//导航栏下拉显示
+		console.log(String(window.location));
+		let url = String(window.location)
+		let urlString = url.substring(url.lastIndexOf("/") + 1)
+		let string = urlString
+		console.log(string)
+		if (string == 'dianwang.html') {
+			$(".dianwangNav").hover(function() {
+				console.log("jin");
+				$(this).find('.dianwangxialaList').show()
+				$('.dianwangxialaList_a').on('click', function(e) {
+					for (var index = 1; index < 4; index++) {
+						if ($(this)[0].id == "dianwangTab" + index + "") {
+							$("#dianwangTab li:nth-child(" + index + ") a").tab('show')
+							$('.dianwangxialaList').hide()
+							return false
+						}
+					}
+				})
+			}, function() {
+				console.log("chu");
+				$(this).find('.dianwangxialaList').hide()
+			})
+		}
+		if (string == 'kecheng.html') {
+			$(".kechengNav").hover(function() {
+				console.log("jin");
+				$(this).find('.kechengxialaList').show()
+				$('#kechengTab1').on('click', function(e) {
+					console.log('显示笔试内容');
+					$("#kechengTab1").addClass('bishion')
+					$("#kechengTab2").removeClass('bishion')
+					$("#bishiContent").show()
+					$("#mianshiContent").hide()
+
+				})
+				$('#kechengTab2').on('click', function(e) {
+					console.log('显示笔试内容');
+					$("#kechengTab1").removeClass('bishion')
+					$("#kechengTab2").addClass('bishion')
+					$("#bishiContent").hide()
+					$("#mianshiContent").show()
+
+				})
+			}, function() {
+				console.log("chu");
+				$(this).find('.kechengxialaList').hide()
+			})
+		}
+		if (string == 'detail.html') {
+			$("#bannerImg").hide()
+		}
+
+
+
+
+
+
+	})
+</script>

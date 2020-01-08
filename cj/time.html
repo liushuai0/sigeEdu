@@ -1,0 +1,253 @@
+<style type="text/css">
+	.demo {
+		/* background: #25303b; */
+		padding: 2em 0;
+		box-shadow:0px 4px 9px 0px rgba(136,136,136,0.1);
+	}
+
+	.main-timeline {
+		width: 80%;
+		margin: 20px auto;
+		position: relative;
+	}
+
+	.main-timeline:before {
+		content: "";
+		display: block;
+		width: 2px;
+		height: 100%;
+		background: #799AF4;
+		margin: 0 0 0 -1px;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		
+	}
+
+	.main-timeline .timeline {
+		width: 100%;
+
+		position: relative;
+	}
+
+	.main-timeline .timeline:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+
+	.main-timeline .timeline-content {
+		width: 45%;
+		float: left;
+		margin: 5px 0 0 0;
+		border-radius: 6px;
+		margin-left: -10px;
+		margin-top: -5px;
+		border: 1px solid #999999;
+	}
+
+	.main-timeline .date {
+		display: block;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		background: #799AF4;
+		padding: 5px 0;
+		margin: 0 0 0 -21px;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		font-size: 12px;
+		font-weight: 900;
+		text-transform: uppercase;
+		color: white;
+		border: 2px solid #799AF4;
+		box-shadow: 0 0 0 7px #799AF4;
+	}
+
+	.main-timeline .date span {
+		display: block;
+		text-align: center;
+	}
+
+	.main-timeline .day,
+	.main-timeline .year {
+		font-size: 10px;
+		line-height: 26px;
+
+	}
+
+	.main-timeline .month {
+		font-size: 18px;
+	}
+
+	.main-timeline .title {
+		padding: 15px;
+		margin: 0;
+		font-size: 15px;
+		color: #fff;
+		text-transform: uppercase;
+		letter-spacing: -1px;
+		border-radius: 6px 6px 0 0;
+		position: relative;
+	}
+
+	.main-timeline .title:after {
+		content: "";
+		width: 10px;
+		height: 10px;
+		position: absolute;
+		top: 20px;
+		right: -5px;
+		transform: rotate(-45deg);
+	}
+
+	.main-timeline .description {
+		padding: 15px;
+		margin: 0;
+		font-size: 14px;
+		color: #656565;
+		background: #fff;
+		border-radius: 0 0 6px 6px;
+	}
+
+	.main-timeline .timeline:nth-child(2n+2) .timeline-content {
+		float: right;
+		margin-right: -10px;
+		margin-bottom: 20px;
+	}
+
+	.main-timeline .timeline:nth-child(2n+2) .title:after {
+		left: -5px;
+	}
+
+	.main-timeline .timeline:nth-child(1) .title,
+	.main-timeline .timeline:nth-child(1) .title:after {
+		background: #9f84c4;
+	}
+
+	.main-timeline .timeline:nth-child(2) .title,
+	.main-timeline .timeline:nth-child(2) .title:after {
+		background: #02a2dd;
+	}
+
+	.main-timeline .timeline:nth-child(3) .title,
+	.main-timeline .timeline:nth-child(3) .title:after {
+		background: #58b25e;
+	}
+
+	.main-timeline .timeline:nth-child(4) .title,
+	.main-timeline .timeline:nth-child(4) .title:after {
+		background: #eab715;
+	}
+
+	.main-timeline .timeline:nth-child(5) .title,
+	.main-timeline .timeline:nth-child(5) .title:after {
+		background: #FFC7AC;
+	}
+
+	.main-timeline .timeline:nth-child(6) .title,
+	.main-timeline .timeline:nth-child(6) .title:after {
+		background: #FF5402;
+	}
+</style>
+
+
+<div class="demo">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="main-timeline">
+					<div class="timeline">
+						<div class="timeline-content">
+							<span class="date">
+								<!-- <span class="day">10<sup>th</sup></span>
+	                                    <span class="month">Apr</span> -->
+								<span class="year">2012</span>
+							</span>
+							<h2 class="title">思格教育成立</h2>
+							<p class="description">
+								<img src="img/shouye/sige.jpg" style="width: 100px;height: 80px;" >
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline">
+						<div class="timeline-content">
+							<span class="date">
+
+								<span class="year">2013</span>
+							</span>
+							<h2 class="title">思格品牌注册</h2>
+							<p class="description">
+								<img src="img/shouye/sige.jpg" style="width: 100px;height: 80px;" >
+							</p>
+						</div>
+					</div>
+
+
+
+
+					<div class="timeline">
+						<div class="timeline-content">
+							<span class="date">
+								<span class="year">2014</span>
+							</span>
+							<h2 class="title">入驻国家级孵化项目</h2>
+							<p class="description">
+								<img src="img/shouye/sige.jpg" style="width: 100px;height: 80px;" >
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline">
+						<div class="timeline-content">
+							<span class="date">
+
+								<span class="year">2015</span>
+							</span>
+							<h2 class="title">
+								帮助长工大等多所高校毕业生电网就业率提高50%</h2>
+							<p class="description">
+								<img src="img/shouye/sige.jpg" style="width: 100px;height: 80px;" >
+							</p>
+						</div>
+					</div>
+					<div class="timeline">
+						<div class="timeline-content">
+							<span class="date">
+								<span class="year">2016</span>
+							</span>
+							<h2 class="title">
+								与百度、腾讯、搜狐
+								新浪等达成战略合作
+							</h2>
+							<p class="description">
+								<img src="img/shouye/sige.jpg" style="width: 100px;height: 80px;" >
+							</p>
+						</div>
+					</div>
+
+					<div class="timeline">
+						<div class="timeline-content">
+							<span class="date">
+
+								<span class="year">2017</span>
+							</span>
+							<h2 class="title">
+
+								与吉林化工学院等高校
+								签订校企合作协议
+								50%</h2>
+							<p class="description">
+								<img src="img/shouye/sige.jpg" style="width: 100px;height: 80px;" >
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
