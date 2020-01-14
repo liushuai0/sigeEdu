@@ -1,17 +1,14 @@
 <!-- 文章右侧侧栏内容 -->
-
-
-
 <div class="bg-white px-3 pt-3">
 	<div class="" style="color: #0A69CD;font-size: 19px;font-weight: bold;">
 		联系方式
 	</div>
 	<ul class="p-2">
-		<li class="py-2" style="border-bottom: 3px dotted #DCDCDC;">全国咨询热线：400-003-1516</li>
-		<li class="py-2" style="border-bottom: 3px dotted #DCDCDC;">官方微信：思格教育</li>
-		<li class="py-2" style="border-bottom: 3px dotted #DCDCDC;">官方微博：思格教育</li>
-		<li class="py-2" style="border-bottom: 3px dotted #DCDCDC;">考生互动Q群1：417844130</li>
-		<li class="py-2">考生互动Q群2：645375977 </li>
+		<li class="py-2" style="border-bottom: 3px dotted #DCDCDC;" id="rexian">全国咨询热线：</li>
+		<li class="py-2" style="border-bottom: 3px dotted #DCDCDC;" id="weixin">官方微信：</li>
+		<li class="py-2" style="border-bottom: 3px dotted #DCDCDC;" id='weibo'>官方微博：</li>
+		<li class="py-2" style="border-bottom: 3px dotted #DCDCDC;" id='qun1'>考生互动Q群1：</li>
+		<li class="py-2" id='qun2'>考生互动Q群2：</li>
 	</ul>
 </div>
 <img src="img/shouye/公众号.jpg" class="w-100">
@@ -21,9 +18,11 @@
 		面授课程
 	</div>
 	<div class="" id="rkechengList">
-		<div class="d-flex">
-			<img src="img/mianshouimg.png" style="width: 45%;height: auto;">
-			<div class="ml-3 position-relative">
+
+
+		<!-- <div class="d-flex">
+			<img src="img/mianshouimg.png" class="mianshouImmg">
+			<div class="ml-3 position-relative" style="width: 160px;">
 				<div class="" style="font-size: 14px;">
 					国家电网考试真题精讲公开课精讲公开课
 				</div>
@@ -36,43 +35,22 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="d-flex">
-			<img src="img/mianshouimg.png" style="width: 45%;height: auto;">
-			<div class="ml-3 position-relative">
-				<div class="" style="font-size: 14px;">
-					国家电网考试真题精讲公开课精讲公开课
-				</div>
-				<div class="d-flex flex-column position-absolute" style="left: 0;bottom: 5px;">
-					<div class="" style="font-size: 12px; color: #999999;">
-						适用批次 ：2019第一批
-					</div>
-					<div class="" style="font-size: 12px; color: #999999;">
-						开课时间 ：2019年11月
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="d-flex">
-			<img src="img/mianshouimg.png" style="width: 45%;height: auto;">
-			<div class="ml-3 position-relative">
-				<div class="" style="font-size: 14px;">
-					国家电网考试真题精讲公开课精讲公开课
-				</div>
-				<div class="d-flex flex-column position-absolute" style="left: 0;bottom: 5px;">
-					<div class="" style="font-size: 12px; color: #999999;">
-						适用批次 ：2019第一批
-					</div>
-					<div class="" style="font-size: 12px; color: #999999;">
-						开课时间 ：2019年11月
-					</div>
-				</div>
-			</div>
-		</div>
+		</div> -->
 	</div>
-	<div class="">
-		当前为分页
-	</div>
+	<!-- <div class="">
+		<div class="mt-2 mx-auto">
+			<nav class="d-flex justify-content-center" aria-label="Page navigation example">
+				<ul class="pagination mx-auto" id="navpagination">
+
+				</ul>
+			</nav>
+		</div>
+		<style type="text/css">
+			#navpagination>li>a {
+				border: none;
+			}
+		</style>
+	</div> -->
 </div>
 <div class="bg-white p-3 mt-3 pb-5 mb-2" style="box-shadow:-2px 3px 16px 0px rgba(153,153,153,0.1);">
 	<div class="mb-3" style="color: #0A69CD;font-size: 19px;font-weight: bold;">
@@ -80,53 +58,67 @@
 	</div>
 	<div class="" id="">
 		<div class="w-100">
-			<div class="d-flex justify-content-between align-items-center overflow-hidden mb-2">
-				<img src="./img/people1.png" style="width: 40px;height: 40px;">
-				<div class="border rounded" style="font-size: 14px;color: #515151;height: 50px;width: 85%;">
-					<div class="" style="font-size: 12px;color: #ADADAD;text-align: right;margin-right: 10px;padding-top: 2px;">
-						2019-10-29 16:50
+			<div id="carouselExampleIndicators" class="carousel navcarousel slide" data-ride="carousel">
+				<ol class="carousel-indicators nav_carousel1">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+
+				</ol>
+				<div class="carousel-inner" id='nav_carousel'>
+					<div class="carousel-item caritem active">
+						<div class="d-flex flex-column" id='wendaList'>
+							<!-- <div class="d-flex justify-content-between align-items-center overflow-hidden mb-2">
+								<img src="./img/people1.png" style="width: 40px;height: 40px;">
+								<div class="border rounded" style="font-size: 14px;color: #515151;height: 50px;width: 85%;">
+									<div class="" style="font-size: 12px;color: #ADADAD;text-align: right;margin-right: 10px;padding-top: 2px;">
+										2019-10-29 16:50
+									</div>
+									<div class="" style="overflow: hidden;white-space: nowrap;text-overflow: ellipsis;padding-left: 10px;">
+										电气新生进国家电网该怎么样努力想进国家电网该怎么样努力？
+									</div>
+								</div>
+							</div> -->
+
+						</div>
 					</div>
-					<div class="" style="overflow: hidden;white-space: nowrap;text-overflow: ellipsis;padding-left: 10px;">
-						电气新生进国家电网该怎么样努力想进国家电网该怎么样努力？
+					<div class="carousel-item caritem">
+						<div class="d-flex flex-column">
+
+							<div class="d-flex justify-content-between align-items-center overflow-hidden mb-2">
+								<img src="./img/people1.png" style="width: 40px;height: 40px;">
+								<div class="border rounded" style="font-size: 14px;color: #515151;height: 50px;width: 85%;">
+									<div class="" style="font-size: 12px;color: #ADADAD;text-align: right;margin-right: 10px;padding-top: 2px;">
+										2019-10-29 16:50
+									</div>
+									<div class="" style="overflow: hidden;white-space: nowrap;text-overflow: ellipsis;padding-left: 10px;">
+										电气新生进国家电网该怎么样努力想进国家电网该怎么样努力？
+									</div>
+								</div>
+							</div>
+
+						</div>
 					</div>
+
 				</div>
+
+				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+
 			</div>
-			<div class="d-flex justify-content-between align-items-center overflow-hidden mb-2">
-				<img src="./img/people1.png" style="width: 40px;height: 40px;">
-				<div class="border rounded" style="font-size: 14px;color: #515151;height: 50px;width: 85%;">
-					<div class="" style="font-size: 12px;color: #ADADAD;text-align: right;margin-right: 10px;padding-top: 2px;">
-						2019-10-29 16:50
-					</div>
-					<div class="" style="overflow: hidden;white-space: nowrap;text-overflow: ellipsis;padding-left: 10px;">
-						电气新生进国家电网该怎么样努力想进国家电网该怎么样努力？
-					</div>
-				</div>
-			</div>
-			<div class="d-flex justify-content-between align-items-center overflow-hidden mb-2">
-				<img src="./img/people1.png" style="width: 40px;height: 40px;">
-				<div class="border rounded" style="font-size: 14px;color: #515151;height: 50px;width: 85%;">
-					<div class="" style="font-size: 12px;color: #ADADAD;text-align: right;margin-right: 10px;padding-top: 2px;">
-						2019-10-29 16:50
-					</div>
-					<div class="" style="overflow: hidden;white-space: nowrap;text-overflow: ellipsis;padding-left: 10px;">
-						电气新生进国家电网该怎么样努力想进国家电网该怎么样努力？
-					</div>
-				</div>
-			</div>
+
+
 		</div>
 	</div>
-	<div class="">
+	<div class="mt-5 ">
 		<div class="position-relative">
-			<input type="text" class="form-control" maxlength='20' style="width: 85%;display: flex;" placeholder="一句话完整的描述你的问题" name="wenti" id=""
-			 value="">
+			<input type="text" class="form-control" maxlength='20' style="width: 85%;display: flex;" placeholder="一句话完整的描述你的问题"
+			 name="wenti" id="wentiTitle" value="">
 			</input>
 			<span class="input-group-addon position-absolute" style="right: 0;top: 7px;" id="titleaddon"></span>
 		</div>
-		<script type="text/javascript">
-			$('input[name="wenti"]').bind('change blur keyup input', function() {
-				$('#titleaddon').text($(this).val().length + '/20');
-			});
-		</script>
+
 		<div class="p-2 my-2" style="background-color: #F2FAFD;color: #BABABA;">
 			<div class="" style="font-size: 10px;">
 				<span class="dian">·</span>问题是什么，你想得到什么帮助，以 “ ？ ” 结束
@@ -136,10 +128,87 @@
 			</div>
 		</div>
 		<div class="">
-			<textarea class="w-100" style="font-size: 14px;height: 80px;" placeholder="详细说明问题，以便更好的获得回答 （ 选填 ）"></textarea>
+			<textarea id='wentiDetail' class="w-100" style="font-size: 14px;height: 80px;" placeholder="详细说明问题，以便更好的获得回答 （ 选填 ）"></textarea>
 		</div>
-		<button type="button" class="btn btn-primary my-2" style="float: right; width: 100px;height: 30px;line-height: 16px;">提 交</button>
-		
-		
+		<button type="button" onclick="wentitijiao()" class="btn btn-primary my-2" style="float: right; width: 100px;height: 30px;line-height: 16px;">提
+			交</button>
 	</div>
 </div>
+
+
+<script type="text/javascript">
+	$.post(baseUrl + "api/demo/index/right", function(res) {
+		console.log(res);
+		//1.联系方式处理
+		let contact = res.data.contact
+		$("#rexian").append(contact.hotline)
+		$("#weixin").append(contact.wechat)
+		$("#weibo").append(contact.weibo)
+		$("#qun1").append(contact.qq1)
+		$("#qun2").append(contact.qq2)
+
+		//2.课程处理
+		let courselist = res.data.courselist
+		$.each(courselist.data, function(index) {
+			$("#rkechengList").append("<div class='d-flex mb-2'><img src='" + courselist.data[index].thumbnail +
+				"' class='mianshouImmg'><div class='ml-3 position-relative' style='width: 160px;'><div style='font-size: 14px;'>" +
+				courselist.data[index].title +
+				"</div><div class='d-flex flex-column position-absolute' style='left: 0;bottom: 5px;'><div style='font-size: 12px; color: #999999;'>适用批次：" +
+				courselist.data[index].batch + "</div><div style='font-size: 12px; color: #999999;'>开课时间：" + courselist.data[
+					index].start_time + "</div></div></div></div>")
+		})
+
+		//3.电网问答
+		let answerlist = res.data.answerlist.data
+		$.each(answerlist, function(index) {
+			$("#wendaList").append(
+				"<div class='d-flex justify-content-between align-items-center overflow-hidden mb-2'><img src='" + answerlist[
+					index].thumbnail +
+				"' style='width: 40px;height: 40px;'><div class='border rounded' style='font-size: 14px;color: #515151;height: 50px;width: 85%;'><div style='font-size: 12px;color: #ADADAD;text-align: right;margin-right: 10px;padding-top: 2px;'>" +
+				answerlist[index].addtime +
+				"</div><div style='overflow: hidden;white-space: nowrap;text-overflow: ellipsis;padding-left: 10px;'>" +
+				answerlist[index].title + "</div></div></div>")
+		})
+	}, "json")
+
+	function wentitijiao() {
+		let title = $("#wentiTitle").val()
+		let detail = $("#wentiDetail").val()
+		console.log(title);
+		console.log(detail);
+		$.post(baseUrl + "api/demo/index/submitQuestion", {
+			"title": title,
+			"detail": detail
+		}, function(res) {
+			console.log(res);
+			alert(res.msg)
+			$("#wentiTitle").val("")
+			$("#wentiDetail").val("")
+
+		}, "json")
+	}
+
+	var visiblePages = 3
+	var totalPages = 4
+	$.jqPaginator('#navpagination', {
+		totalPages: totalPages,
+		visiblePages: visiblePages,
+		currentPage: 1,
+		// first: '<li class="first"><a href="javascript:void(0);">首页</a></li>',
+		prev: '<li class="prev"><a href="javascript:;">上一页</a></li>',
+		next: '<li class="next"><a href="javascript:void(0);">下一页</a></li>',
+		// last: '<li class="last"><a href="javascript:void(0);">尾页</a></li>',
+		page: '<li class="page"><a href="javascript:;">{{page}}</a></li>',
+		onPageChange: function(num, type) {
+			$('#p2').text(type + '：' + num);
+		},
+	})
+
+	$('.navcarousel').carousel({
+		interval: 2000
+	})
+
+	$('input[name="wenti"]').bind('change blur keyup input', function() {
+		$('#titleaddon').text($(this).val().length + '/20');
+	});
+</script>

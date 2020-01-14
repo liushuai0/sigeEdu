@@ -31,6 +31,7 @@
  */
 
 (function($){
+
     var day_ms = 24 * 60 * 60,
         hour_ms = 60 * 60,
         minute_ms = 60,

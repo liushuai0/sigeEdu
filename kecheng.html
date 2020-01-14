@@ -13,19 +13,11 @@
 		<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.bundle.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="cj/jquery.syotimer.js" type="text/javascript" charset="utf-8"></script> <!-- 倒计时插件 -->
-		<script src="js/cx/index.js" type="text/javascript" charset="utf-8"></script> <!-- 程序js -->
 		<script src="cj/jquery.jSlider.min.js" type="text/javascript" charset="utf-8"></script> <!-- 轮播js -->
+		<script src="js/jqPaginator.js" type="text/javascript" charset="utf-8"></script> <!--分页插件-->
+		<script src="js/cx/kecheng.js" type="text/javascript" charset="utf-8"></script> <!-- 程序js -->
+		<script src="js/save.js" type="text/javascript" charset="utf-8"></script>
 	</head>
-	<script type="text/javascript">
-		$(function() {
-			$("#headerpage").load("header.html");
-			$("#aboutNav").load("./common/aboutNav.html");
-			$("#footer").load("footer.html");
-
-		})
-	</script>
-
 	<body>
 		<div class="">
 			<div id="headerpage">
@@ -195,9 +187,16 @@
 											</div>
 										</div>
 									</div>
-									<div class="">
-										c此处为分页信息
-									</div>
+									
+										<div class="mt-3 mx-auto">
+											
+											<nav class="d-flex justify-content-center" aria-label="Page navigation example">
+												<ul class="pagination mx-auto" id="pagination2">
+										
+												</ul>
+											</nav>
+										</div>
+									
 								</div>
 								<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
 							</div>

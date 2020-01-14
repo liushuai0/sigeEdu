@@ -13,18 +13,14 @@
 		<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.bundle.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="cj/jquery.syotimer.js" type="text/javascript" charset="utf-8"></script> <!-- 倒计时插件 -->
-		<script src="js/cx/index.js" type="text/javascript" charset="utf-8"></script> <!-- 程序js -->
+		
 		<script src="cj/jquery.jSlider.min.js" type="text/javascript" charset="utf-8"></script> <!-- 轮播js -->
+		<script src="js/save.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jqPaginator.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/cx/aboutUs.js" type="text/javascript" charset="utf-8"></script> <!-- 程序js -->
+		<script src="js/jquery.ellipsis.js" type="text/javascript" charset="utf-8"></script>
 	</head>
-	<script type="text/javascript">
-		$(function() {
-			$("#headerpage").load("header.html");
-			$("#aboutNav").load("aboutNav.html");
-			$("#footer").load("footer.html");
 
-		})
-	</script>
 	<body>
 		<div id="headerpage">
 
@@ -38,36 +34,41 @@
 					<!-- 关于列表 -->
 					<div class="about_listNav nav flex-column nav-pills" id='listNav' role="tablist" aria-orientation="vertical">
 						<a class="nav-link active" id="jianjie-tab" data-toggle="pill" href="#jianjie" role="tab" aria-controls="jianjie"
-						 aria-selected="true">思格简介</a>
+						 aria-selected="true"></a>
 						<a class="nav-link" id="wenhua-tab" data-toggle="pill" href="#wenhua" role="tab" aria-controls="wenhua"
-						 aria-selected="true">思格文化</a>
+						 aria-selected="true"></a>
 						<a class="nav-link" id="licheng-tab" data-toggle="pill" href="#licheng" role="tab" aria-controls="licheng"
-						 aria-selected="true">发展历程</a>
+						 aria-selected="true"></a>
 						<a class="nav-link" id="rongyu-tab" data-toggle="pill" href="#rongyu" role="tab" aria-controls="rongyu"
-						 aria-selected="true">思格荣誉</a>
+						 aria-selected="true"></a>
 						<a class="nav-link" id="xinwen-tab" data-toggle="pill" href="#xinwen" role="tab" aria-controls="xinwen"
-						 aria-selected="true">官方新闻</a>
+						 aria-selected="true"></a>
 						<a class="nav-link" id="dongtai-tab" data-toggle="pill" href="#dongtai" role="tab" aria-controls="dongtai"
-						 aria-selected="true">开班动态</a>
+						 aria-selected="true"></a>
 						<a class="nav-link" id="xuanjiang-tab" data-toggle="pill" href="#xuanjiang" role="tab" aria-controls="xuanjiang"
-						 aria-selected="true">高校宣讲</a>
-						<a class="nav-link" id="falv-tab" data-toggle="pill" href="#falv" role="tab" aria-controls="falv" aria-selected="true">法律声明</a>
+						 aria-selected="true"></a>
+						<a class="nav-link" id="falv-tab" data-toggle="pill" href="#falv" role="tab" aria-controls="falv" aria-selected="true">
+							
+						</a>
 						<a class="nav-link" id="mianze-tab" data-toggle="pill" href="#mianze" role="tab" aria-controls="mianze"
-						 aria-selected="true">免责声明</a>
+						 aria-selected="true"></a>
 						<a class="nav-link" id="lianxi-tab" data-toggle="pill" href="#lianxi" role="tab" aria-controls="lianxi"
-						 aria-selected="true">联系我们</a>
+						 aria-selected="true"></a>
 					</div>
 				</div>
 
 
 				<div class="col-8 ml-4 bg-white">
-					<div class="tab-content" id="v-pills-tabContent">
+					<div class="tab-content p-3" id="v-pills-tabContent">
 						<!-- 简介 -->
-						<div class="tab-pane fade p-3 show active" id="jianjie" role="tabpanel" aria-labelledby="jianjie-tab">
+						<div class="tab-pane fade  show active" id="jianjie" role="tabpanel" aria-labelledby="jianjie-tab">
 							<div class="sige_title">
-								思格简介
+								
 							</div>
-							<img src="img/shouye/sige.jpg">
+							<div class="sige_content">
+								
+							</div>
+							<!-- <img src="img/shouye/sige.jpg">
 							<div class="about_jj_title">
 								思格教育
 							</div>
@@ -77,221 +78,167 @@
 							<div class="mt-3 about_jj_content">
 								思格教育成立于2012年，是吉林省思格教育信息咨询服务有限公司旗下品牌，主要从事国家电网招聘考试培训工作。公司总部位于吉林省长春市，历经五年发展，现已成为集面授培训、网络教学、公共管理服务、电网招聘考试咨询、教材编写、教学软件开发于一体的综合性教育培训企业。
 								经过不断积累与发展，思格教育已成为国内优质国家电网招聘考试品牌培训机构，被业界誉为“大学生就业孵化基地”。
-							</div>
+							</div> -->
 						</div>
 						<!-- 文化 -->
-						<div class="tab-pane fade" id="wenhua" role="tabpanel" aria-labelledby="wenhua-tab">文化</div>
+						<div class="tab-pane fade" id="wenhua" role="tabpanel" aria-labelledby="wenhua-tab">
+							<div class="sige_title">
+								
+							</div>
+							<div class="sige_content">
+								
+							</div>
+						</div>
 						<!-- 历程 -->
 						<div class="tab-pane fade" id="licheng" role="tabpanel" aria-labelledby="licheng-tab">
+							<div class="sige_title">
+								
+							</div>
 							<div class="" id='shijianzhou'>
+
+							</div>
+						</div>
+						<!-- 荣誉 -->
+						<div class="tab-pane fade" id="rongyu" role="tabpanel" aria-labelledby="rongyu-tab">
+							<div class="sige_title">
+								
+							</div>
+							<div class="sige_content">
 								
 							</div>
 						</div>
-						<div class="tab-pane fade" id="rongyu" role="tabpanel" aria-labelledby="rongyu-tab">荣誉</div>
-						<div class="tab-pane fade" id="xinwen" role="tabpanel" aria-labelledby="rongyu-tab">
+						<!-- 新闻 -->
+						<div class="tab-pane fade" id="xinwen" role="tabpanel" aria-labelledby="xinwen-tab">
 							<div class="sige_title">
-								官方新闻
-							</div>
-							<div class="">
-								<div class="row border-bottom mx-3 pb-3 mb-3">
-									<div class="gf_left col-2">
-										<div class="">
-											11-15
-										</div>
-										<div class="gf_year">
-											2019
-										</div>
-										<div class="">
-											<img src="img/xinwenright.png" style="width: 20px;height: 20px;" >
-										</div>
-									</div>
-									<div class="gf_center col-7">
-										<div class="gf_title">
-											国家电网有限公司总部关于2020年高校毕业生招聘考试安排的公告
-										</div>
-										<div class="gf_content">
-											我公司将于近期组织2020年应聘国家电力调度控制中心的高校毕业生开展招聘考试（其他单位另行安排，请关注招聘平台通知），现将有关事项通知如下：
-										</div>
-									</div>
-									<div class="gf_img col-3">
-										<img src="img/xinwenImg.png" style="width: 152px;height: 90px;" >
-									</div>
-								</div>
-								<div class="row border-bottom mx-3 pb-3 mb-3">
-									<div class="gf_left col-2">
-										<div class="">
-											11-15
-										</div>
-										<div class="gf_year">
-											2019
-										</div>
-										<div class="">
-											<img src="img/xinwenright.png" style="width: 20px;height: 20px;" >
-										</div>
-									</div>
-									<div class="gf_center col-7">
-										<div class="gf_title">
-											国家电网有限公司总部关于2020年高校毕业生招聘考试安排的公告
-										</div>
-										<div class="gf_content">
-											我公司将于近期组织2020年应聘国家电力调度控制中心的高校毕业生开展招聘考试（其他单位另行安排，请关注招聘平台通知），现将有关事项通知如下：
-										</div>
-									</div>
-									<div class="gf_img col-3">
-										<img src="img/xinwenImg.png" style="width: 152px;height: 90px;" >
-									</div>
-								</div>
-								<div class="row border-bottom mx-3 pb-3 mb-3">
-									<div class="gf_left col-2">
-										<div class="">
-											11-15
-										</div>
-										<div class="gf_year">
-											2019
-										</div>
-										<div class="">
-											<img src="img/xinwenright.png" style="width: 20px;height: 20px;" >
-										</div>
-									</div>
-									<div class="gf_center col-7">
-										<div class="gf_title">
-											国家电网有限公司总部关于2020年高校毕业生招聘考试安排的公告
-										</div>
-										<div class="gf_content">
-											我公司将于近期组织2020年应聘国家电力调度控制中心的高校毕业生开展招聘考试（其他单位另行安排，请关注招聘平台通知），现将有关事项通知如下：
-										</div>
-									</div>
-									<div class="gf_img col-3">
-										<img src="img/xinwenImg.png" style="width: 152px;height: 90px;" >
-									</div>
-								</div>
 								
 							</div>
+							<div class="" id="xinwenList">
+								
+								<!-- <div class="row border-bottom mx-3 pb-3 mb-3">
+									<div class="gf_left col-2">
+										<div class="">
+											11-15
+										</div>
+										<div class="gf_year">
+											2019
+										</div>
+										<div class="">
+											<img src="img/xinwenright.png" style="width: 20px;height: 20px;">
+										</div>
+									</div>
+									<div class="gf_center col-7">
+										<div class="gf_title">
+											国家电网有限公司总部关于2020年高校毕业生招聘考试安排的公告
+										</div>
+										<div class="gf_content">
+											我公司将于近期组织2020年应聘国家电力调度控制中心的高校毕业生开展招聘考试（其他单位另行安排，请关注招聘平台通知），现将有关事项通知如下：
+										</div>
+									</div>
+									<div class="gf_img col-3">
+										<img src="img/xinwenImg.png" style="width: 152px;height: 90px;">
+									</div>
+								</div> -->
+								
+
+
+							</div>
+							<div class="mt-3 mx-auto">
+
+								<nav class="d-flex justify-content-center" aria-label="Page navigation example">
+									<ul class="pagination mx-auto" id="xinwenPage">
+
+									</ul>
+								</nav>
+								<div class="d-flex justify-content-center" style="color: #646464;font-size: 12px;margin-top: -10px;">
+									共 <span id="xinwenpage"></span>页 共<span id='xinwenTotal'></span>条信息
+								</div>
+							</div>
+
+						</div>
+						<!-- 动态 -->
+						<div class="tab-pane fade" id="dongtai" role="tabpanel" aria-labelledby="dongtai-tab">
+							<div class="sige_title">
+								
+							</div>
+							<div class="dongtai_group" id='dongtaiList'>
 							
-						</div>
-						<div class="tab-pane fade" id="dongtai" role="tabpanel" aria-labelledby="rongyu-tab">
-							<div class="sige_title">
-								开班动态
+							<!-- 	<div class=" dontai_card">
+									<img src="img/classImg.png" class="dongtai_img">
+									<div class="dongtai_title dongtai_titleas">
+										国网技术学院2020年高校毕业生校园招聘公告技术学院2020年高校毕业生校园招聘公告其自动化、电机与电器、电机与电器
+									</div>
+									<div class="dongtai_content my-1">
+										校园招聘专业范围：电工类专业（含电力系统及其自动化含电力系统及其自动化、电机与电器、电机与电器其自动化、电机与电器、电机与电器
+									</div>
+									<div class="dongtai_content">
+										2019-10-15
+									</div>
+								</div> -->
+								
 							</div>
-							<div class="dongtai_group">
-								<div class="dontai_card">
-									<img src="img/classImg.png" class="dongtai_img" >
-									<div class="dongtai_title">
-										国网技术学院2020年高校毕业生校园招聘公告
-									</div>
-									<div class="dongtai_content my-1">
-										校园招聘专业范围：电工类专业（含电力系统及其自动化含电力系统及其自动化、电机与电器、电机与电器......
-									</div>
-									<div class="dongtai_content">
-										2019-10-15 
-									</div>
-								</div>
-								<div class=" dontai_card">
-									<img src="img/classImg.png" class="dongtai_img" >
-									<div class="dongtai_title">
-										国网技术学院2020年高校毕业生校园招聘公告
-									</div>
-									<div class="dongtai_content my-1">
-										校园招聘专业范围：电工类专业（含电力系统及其自动化含电力系统及其自动化、电机与电器、电机与电器......
-									</div>
-									<div class="dongtai_content">
-										2019-10-15 
-									</div>
-								</div>
-								<div class=" dontai_card">
-									<img src="img/classImg.png" class="dongtai_img" >
-									<div class="dongtai_title">
-										国网技术学院2020年高校毕业生校园招聘公告
-									</div>
-									<div class="dongtai_content my-1">
-										校园招聘专业范围：电工类专业（含电力系统及其自动化含电力系统及其自动化、电机与电器、电机与电器......
-									</div>
-									<div class="dongtai_content">
-										2019-10-15 
-									</div>
+							<div class="mt-3 mx-auto">
+								<nav class="d-flex justify-content-center" aria-label="Page navigation example">
+									<ul class="pagination mx-auto" id="dongtaiPage">
+
+									</ul>
+								</nav>
+								<div class="d-flex justify-content-center" style="color: #646464;font-size: 12px;margin-top: -10px;">
+									共 <span id="dongtaipage"></span>页 共<span id='dongtaiTotal'></span>条信息
 								</div>
 							</div>
 						</div>
-						<div class="tab-pane fade p-3" id="xuanjiang" role="tabpanel" aria-labelledby="rongyu-tab">
+						<!-- 宣讲 -->
+						<div class="tab-pane fade" id="xuanjiang" role="tabpanel" aria-labelledby="xuanjiang-tab">
 							<div class="sige_title">
-								高校宣讲
+								
+							</div>
+							<div id='xuanjiangList'>
+								<!-- <div class="xj_card">
+									<img src="img/classim.png" class="xj_img">
+									<div class="ml-3 xj_card_right">
+										<div class="xj_title">
+											距离网申截止仅剩六天，报名人次已突破九万！
+										</div>
+										<div class="xj_content">
+											为帮助基础薄弱的同学们改善学习现状，实现进击国网的目标，思格教育推出2021年芒果备考方案，领先一步抢先备考。2020年国家电网第一批各省市单位总预计招聘人数11390人，截止今天10:00，共报考94881人次，报考人数为47441人。因为一个考生一个志愿下可以报考两个意向，所以报考人数=报考人次/2。
+											思格教育温馨提示：已报考考生可以了解自己所报考单位的整体竞争力大小，未报考考生可根据实际报考情况进行志愿调整！
+										</div>
+										<div class="xj_date">
+											2019-10-20
+										</div>
+									</div>
+									<div class="align-self-center">
+										<img src="img/xuanjiang.png" style="width: 30px;height: 30px;">
+									</div>
+								</div> -->
+								
+								
+								
+
 							</div>
 							<div class="">
-								<div class="xj_card">
-									<img src="img/classim.png" class="xj_img">
-									<div class="ml-3 xj_card_right">
-										<div class="xj_title">
-											距离网申截止仅剩六天，报名人次已突破九万！
-										</div>
-										<div class="xj_content">
-											为帮助基础薄弱的同学们改善学习现状，实现进击国网的目标，思格教育推出2021年芒果备考方案，领先一步抢先备考。2020年国家电网第一批各省市单位总预计招聘人数11390人，截止今天10:00，共报考94881人次，报考人数为47441人。因为一个考生一个志愿下可以报考两个意向，所以报考人数=报考人次/2。
-											思格教育温馨提示：已报考考生可以了解自己所报考单位的整体竞争力大小，未报考考生可根据实际报考情况进行志愿调整！
-										</div>
-										<div class="xj_date">
-											2019-10-20
-										</div>
+								<div class="mt-3 mx-auto">
+									<nav class="d-flex justify-content-center" aria-label="Page navigation example">
+										<ul class="pagination mx-auto" id="xuanjiangPage">
+							
+										</ul>
+									</nav>
+									<div class="d-flex justify-content-center" style="color: #646464;font-size: 12px;margin-top: -10px;">
+										共 <span id="xuanjiangpage"></span>页 共<span id='xunajiangTotal'></span>条信息
 									</div>
 								</div>
-								<div class="xj_card2">
-									<img src="img/classim.png" class="xj_img">
-									<div class="ml-3 xj_card_right">
-										<div class="xj_title">
-											距离网申截止仅剩六天，报名人次已突破九万！
-										</div>
-										<div class="xj_content">
-											为帮助基础薄弱的同学们改善学习现状，实现进击国网的目标，思格教育推出2021年芒果备考方案，领先一步抢先备考。2020年国家电网第一批各省市单位总预计招聘人数11390人，截止今天10:00，共报考94881人次，报考人数为47441人。因为一个考生一个志愿下可以报考两个意向，所以报考人数=报考人次/2。
-											思格教育温馨提示：已报考考生可以了解自己所报考单位的整体竞争力大小，未报考考生可根据实际报考情况进行志愿调整！
-										</div>
-										<div class="xj_date">
-											2019-10-20
-										</div>
-									</div>
-								</div>
-								<div class="xj_card2">
-									<img src="img/classim.png" class="xj_img">
-									<div class="ml-3 xj_card_right">
-										<div class="xj_title">
-											距离网申截止仅剩六天，报名人次已突破九万！
-										</div>
-										<div class="xj_content">
-											为帮助基础薄弱的同学们改善学习现状，实现进击国网的目标，思格教育推出2021年芒果备考方案，领先一步抢先备考。2020年国家电网第一批各省市单位总预计招聘人数11390人，截止今天10:00，共报考94881人次，报考人数为47441人。因为一个考生一个志愿下可以报考两个意向，所以报考人数=报考人次/2。
-											思格教育温馨提示：已报考考生可以了解自己所报考单位的整体竞争力大小，未报考考生可根据实际报考情况进行志愿调整！
-										</div>
-										<div class="xj_date">
-											2019-10-20
-										</div>
-									</div>
-								</div>
-								<div class="xj_card2">
-									<img src="img/classim.png" class="xj_img">
-									<div class="ml-3 xj_card_right">
-										<div class="xj_title">
-											距离网申截止仅剩六天，报名人次已突破九万！
-										</div>
-										<div class="xj_content">
-											为帮助基础薄弱的同学们改善学习现状，实现进击国网的目标，思格教育推出2021年芒果备考方案，领先一步抢先备考。2020年国家电网第一批各省市单位总预计招聘人数11390人，截止今天10:00，共报考94881人次，报考人数为47441人。因为一个考生一个志愿下可以报考两个意向，所以报考人数=报考人次/2。
-											思格教育温馨提示：已报考考生可以了解自己所报考单位的整体竞争力大小，未报考考生可根据实际报考情况进行志愿调整！
-										</div>
-										<div class="xj_date">
-											2019-10-20
-										</div>
-									</div>
-								</div>
-								<div class="">
-									当前为分页
-								</div>
-
 							</div>
 
 						</div>
-						<div class="tab-pane fade" id="falv" role="tabpanel" aria-labelledby="rongyu-tab">
+						<!-- 荣誉 -->
+						<div class="tab-pane fade" id="falv" role="tabpanel" aria-labelledby="falv-tab">
 							<div class="sige_title">
-								法律声明
+								
 							</div>
-							<div class="about_jj_title">
-								法律声明
+							<div class="sige_content">
+								
 							</div>
-							<div class="mt-3 about_jj_content">
+							<!-- <div class="mt-3 about_jj_content">
 								华图教育旗下包括北京华图宏阳教育文化发展有限公司、北京华图宏阳图书有限公司、北京华图宏阳网络科技有限公司(华图网校)以及遍布全国的若干分校，为公众提供培训、图书、咨询、在线培训等服务。华图教育在国家工商行政管理总局商标局注册并拥有"华图教育"、"华图"、"HUATUJIAOYU"、"HUATU
 								EDUCATION"等一系列商标。
 							</div>
@@ -310,10 +257,24 @@
 								<div class="">
 									2006年9月
 								</div>
+							</div> -->
+						</div>
+						<div class="tab-pane fade" id="mianze" role="tabpanel" aria-labelledby="mianze-tab">
+							<div class="sige_title">
+								
+							</div>
+							<div class="sige_content">
+								
 							</div>
 						</div>
-						<div class="tab-pane fade" id="mianze" role="tabpanel" aria-labelledby="rongyu-tab">荣誉</div>
-						<div class="tab-pane fade" id="lianxi" role="tabpanel" aria-labelledby="rongyu-tab">荣誉</div>
+						<div class="tab-pane fade" id="lianxi" role="tabpanel" aria-labelledby="lianxi-tab">
+							<div class="sige_title">
+								
+							</div>
+							<div class="sige_content">
+								
+							</div>
+						</div>
 
 
 					</div>

@@ -30,7 +30,7 @@
 						招考公告
 					</div>
 					<div class="dianwangxialaList_a" id="dianwangTab2">
-						招考指导
+						报考指导
 					</div>
 					<div class="dianwangxialaList_a" id="dianwangTab3">
 						考试快讯
@@ -115,9 +115,9 @@
 <div class="bannerImg" id='bannerImg'>
 	<img src="img/shouye/banner01.jpg">
 </div>
-<style type="text/css">
-	.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-		background-color: #ADD7F8;
+<style type="text/css" scoped>
+	.c_h_nav_link.active{
+		background-color: #ADD7F8 !important;
 	}
 	.nav-pills .show>.nav-link{
 		color: #FFFFFF;
@@ -172,7 +172,7 @@
 				console.log("jin");
 				$(this).find('.kechengxialaList').show()
 				$('#kechengTab1').on('click', function(e) {
-					console.log('显示笔试内容');
+					
 					$("#kechengTab1").addClass('bishion')
 					$("#kechengTab2").removeClass('bishion')
 					$("#bishiContent").show()
@@ -180,7 +180,7 @@
 
 				})
 				$('#kechengTab2').on('click', function(e) {
-					console.log('显示笔试内容');
+					
 					$("#kechengTab1").removeClass('bishion')
 					$("#kechengTab2").addClass('bishion')
 					$("#bishiContent").hide()
